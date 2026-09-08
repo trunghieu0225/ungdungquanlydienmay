@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EAF4FF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUẢN LÝ KHUYẾN MÃI"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#4A86E8"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã khuyến mãi" />
+
+    <EditText
+        android:id="@+id/edtDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giảm bao nhiêu tiền"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/edtMinTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Áp dụng khi đơn từ"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnAddPromotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM MÃ"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#4A86E8"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnUpdatePromotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SỬA MÃ"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4A86E8"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnDeletePromotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XÓA MÃ"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#E53935"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/lvPromotions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

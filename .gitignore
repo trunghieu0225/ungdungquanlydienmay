@@ -1,0 +1,28 @@
+﻿# IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+.gradle/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Maven build outputs
+**/target/
+target/
+
+# Gradle build outputs
+**/build/
+build/
+
+# Kotlin
+.kotlin/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log

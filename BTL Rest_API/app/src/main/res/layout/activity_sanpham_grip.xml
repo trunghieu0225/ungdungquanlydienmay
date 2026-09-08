@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trả chậm 0% trả trước 0đ"
+            android:textSize="12sp"
+            android:textColor="#555555"
+            android:background="#F2F2F2"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="5dp" />
+
+        <ImageView
+            android:id="@+id/imgSanPhamGrip"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dieuhoa_nagawa" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08/04 THỨ 4 SALE SẬP SÀN"
+            android:textSize="11sp"
+            android:textColor="#FFFFFF"
+            android:background="#D75C1E"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nagakawa Inverter 1 HP NIS-C09R2T28"
+            android:textSize="15sp"
+            android:textColor="#222222"
+            android:textStyle="bold"
+            android:maxLines="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 chiều chỉ làm lạnh"
+            android:textSize="13sp"
+            android:textColor="#777777"
+            android:background="#F3F4F6"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.490.000đ"
+            android:textColor="#D83A2F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtGiaCu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8.690.000đ -36%"
+            android:textColor="#9E9E9E"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/txtQua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quà 999.000đ"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/txtDanhGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐ 4.9 • Đã bán 148,9k"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

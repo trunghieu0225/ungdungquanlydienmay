@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.BTL">
+
+        <activity android:name="com.example.dienmayapp.activity.ChiTietSanPhamActivity" />
+        <activity android:name="com.example.dienmayapp.activity.DangKyActivity" />
+        <activity android:name="com.example.dienmayapp.activity.DangNhapActivity" />
+        <activity android:name="com.example.dienmayapp.activity.TrangchuUser" />
+        <activity android:name="com.example.dienmayapp.activity.TrangchuAdmin" />
+        <activity android:name="com.example.dienmayapp.activity.QuanLySanPham" />
+        <activity android:name="com.example.dienmayapp.activity.QuanLyLoai" />
+        <activity android:name="com.example.dienmayapp.activity.QuanLyDonHang" />
+        <activity android:name="com.example.dienmayapp.activity.QuanLyUser" />
+        <activity android:name="com.example.dienmayapp.activity.TaiKhoanUserActivity" />
+        <activity android:name="com.example.dienmayapp.activity.GioHangActivity" />
+        <activity android:name="com.example.dienmayapp.activity.LichSuDonHang" />
+        <activity android:name="com.example.dienmayapp.activity.XemDonHangActivity" />
+        <activity android:name="com.example.dienmayapp.activity.QuanLyKhuyenMaiActivity" />
+        <activity android:name="com.example.dienmayapp.activity.ChiTietDonHang" />
+
+        <activity
+            android:name="com.example.dienmayapp.activity.Trangchu"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

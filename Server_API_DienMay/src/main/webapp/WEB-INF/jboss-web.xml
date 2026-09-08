@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+    <context-root>Server_API_DienMay-1.0-SNAPSHOT</context-root>
+</jboss-web>

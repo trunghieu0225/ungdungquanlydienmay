@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Thanh nút cố định dưới -->
+    <LinearLayout
+        android:id="@+id/layoutBottomAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnThemVaoGio"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Thêm vào giỏ"
+            android:textAllCaps="false"
+            android:textColor="#1976D2"
+            android:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnMuaNgay"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="Mua ngay"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F57C00" />
+    </LinearLayout>
+
+    <!-- Nội dung cuộn -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutBottomAction"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Nút quay lại -->
+            <ImageView
+                android:id="@+id/btnBackChiTiet"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Ảnh sản phẩm -->
+            <ImageView
+                android:id="@+id/imgChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="fitCenter"
+                android:background="#FFFFFF"
+                android:src="@drawable/dieuhoa_nagawa" />
+
+            <!-- Tên sản phẩm -->
+            <TextView
+                android:id="@+id/txtTenChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên sản phẩm"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#111111"
+                android:layout_marginTop="20dp" />
+
+            <!-- Đánh giá -->
+            <TextView
+                android:id="@+id/txtDanhGiaChiTiet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐ 4.9 • Đã bán 148,9k"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:layout_marginTop="8dp" />
+
+            <!-- Giá -->
+            <TextView
+                android:id="@+id/txtGiaChiTiet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.490.000đ"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#E53935"
+                android:layout_marginTop="16dp" />
+
+            <!-- Giá cũ -->
+            <TextView
+                android:id="@+id/txtGiaCuChiTiet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.690.000đ -36%"
+                android:textSize="18sp"
+                android:textColor="#9E9E9E"
+                android:layout_marginTop="4dp" />
+
+            <!-- Quà -->
+            <TextView
+                android:id="@+id/txtQuaChiTiet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quà 999.000đ"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:layout_marginTop="10dp" />
+
+            <!-- Mô tả -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả sản phẩm"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111111"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:id="@+id/txtMoTaChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả ở đây..."
+                android:textSize="17sp"
+                android:textColor="#444444"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin chuyển khoản"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#453A16"
+        android:textStyle="bold"
+        android:text="CHUỘT BÉO XANH SHOP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngân hàng: VietinBank"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STK: 999966669999"
+        android:textColor="#4A86E8"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+        <ImageButton
+
+            android:layout_width="150dp"
+            android:src="@drawable/jerry"
+            android:scaleType="centerCrop"
+            android:layout_height="150dp">
+
+        </ImageButton>
+
+    <ImageButton
+        android:id="@+id/btnCopyAccount"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_copy"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Sao chép"
+        android:layout_gravity="end" />
+
+    <TextView
+        android:id="@+id/tvTransferAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0đ"
+        android:textColor="#E53935"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnConfirmTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Tôi đã chuyển khoản"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4A86E8"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnCancelTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Huỷ"
+        android:textAllCaps="false"
+        android:textColor="#666666"
+        android:backgroundTint="#E0E0E0" />
+
+</LinearLayout>
